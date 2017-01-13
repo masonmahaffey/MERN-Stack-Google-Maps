@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Google Map with React Cities
+  </title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style type="text/css" media="screen">
+    
+    #map {
+      height: 100vh;
+      width: 50%;
+      float: left;
+    }
+
+    #cities-container {
+      width: 50%;
+      float: left;
+    }
+    /*    #content {
+      margin: 10px auto;
+      float: left;
+      text-align: left;
+      columns: 2;
+    }*/
+    th, td {
+      border: 2px solid black;
+    }
+    .cityName {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .spacer {
+      margin-top: 30px;
+    }
+
+</style>
+
+</head>
+<body>
+  
+
+
+<div id="map"></div>
+<div id="cities-container"></div>
+
+
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <script src="https://fb.me/react-15.1.0.js"></script> 
+  <script src="https://fb.me/react-dom-15.1.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+  <script type="text/javascript" src="js/cities.js"></script>
+  <script type="text/babel" src="js/maps.jsx"></script>
+  <!-- <script type="text/babel" src="js/google-react.jsx"></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEc5DuWA71lniW5_KH7QTz9jyBuFDJT5k&libraries=places"></script>
+
+</body>
+</html>
