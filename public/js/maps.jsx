@@ -129,7 +129,7 @@ class Cities extends React.Component {
     this.state = {currCities: this.props.cities};
   }
 
-  handleInputChange(event) {
+  handleInputChange = (event) => {
     let newFilterValue = event.target.value;
 
     let filteredCitiesArray = [];
@@ -150,9 +150,9 @@ class Cities extends React.Component {
     }
     startArray = filteredCitiesArray;
 
-  }
+  };
 
-  handleInputChangeDestination(event) {
+  handleInputChangeDestination = (event) => {
     let newFilterValue = event.target.value;
 
     let filteredCitiesArray = [];
@@ -177,9 +177,9 @@ class Cities extends React.Component {
       initMap();
     }
 
-  }
+  };
 
-  updateMarkers() {
+  updateMarkers = () => {
     // event.preventDefault();
 
     // this iterates over the entire markers array with our markers objects inside, and sets their maps to null
@@ -192,7 +192,7 @@ class Cities extends React.Component {
     this.state.currCities.map(function (city, index) {
       createMarker(city);
     })
-  }
+  };
 
   render() {
     let cityRows = [];
